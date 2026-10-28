@@ -1,0 +1,32 @@
+{
+  "sample_type": "saliva",
+  "crystal": "diamond",
+  "mode": "full",
+  "output_dir": "results_paper",
+  "datasets": {
+    "T2D_saliva": {
+      "spectra": "t2d_saliva.csv", "label_column": "label", "positive_class": "T2D",
+      "subject_column": "subject", "role": "disease", "literature_panel": "T2D",
+      "positive_label": "T2D", "negative_label": "controls",
+      "description": "type 2 diabetes (T2D) vs. control saliva"
+    },
+    "COVID_original": {
+      "spectra": "covid_original.csv", "label_column": "label", "positive_class": "COVID_POS",
+      "subject_column": "subject", "batch_column": "site", "role": "audit",
+      "positive_label": "COVID-positive", "negative_label": "COVID-negative",
+      "description": "COVID-19 PCR-positive vs. negative saliva as in the original study, where the enrolment group is almost completely confounded with the collection site"
+    },
+    "COVID_NSW_PCR": {
+      "spectra": "covid_nsw_pcr.csv", "label_column": "label", "positive_class": "PCR_POS",
+      "subject_column": "subject", "role": "disease",
+      "positive_label": "PCR-positive", "negative_label": "PCR-negative",
+      "description": "follow-up PCR positive vs. negative on the day of collection, within a single site (NSW); the only COVID-19 comparison free of site confounding"
+    },
+    "COVID_site_NSW_vs_TPCH": {
+      "spectra": "covid_site_nsw_vs_tpch.csv", "label_column": "label", "positive_class": "TPCH",
+      "subject_column": "subject", "role": "audit",
+      "positive_label": "TPCH", "negative_label": "NSW",
+      "description": "COVID-positive subjects from two collection sites (TPCH vs. NSW); an audit comparison whose label is the site, not the disease"
+    }
+  }
+}

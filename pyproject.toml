@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dante-ir"
+version = "1.0.0"
+description = "Acquisition audit and interpretable band descriptor for infrared spectra of biofluids"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "Miguel Sánchez Brito"}]
+dependencies = ["numpy>=1.22", "scipy>=1.8", "pandas>=1.4", "scikit-learn>=1.2", "matplotlib>=3.5", "openpyxl>=3.0"]
+keywords = ["FTIR", "ATR-FTIR", "biospectroscopy", "biofluids", "machine learning", "batch effects", "interpretability"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License",
+               "Topic :: Scientific/Engineering :: Chemistry", "Topic :: Scientific/Engineering :: Medical Science Apps."]
+
+[project.scripts]
+dante-ir = "dante_ir.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

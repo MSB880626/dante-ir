@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use DANTE-IR, please cite the software and the associated article."
+title: "DANTE-IR: Diagnostic Audit aNd inTerpretable band dEscriptors for InfraRed spectra of biofluids"
+version: 1.0.0
+license: MIT
+authors:
+  - family-names: "Sánchez Brito"
+    given-names: "Miguel"
+    affiliation: "Escuela Superior de Cómputo, Instituto Politécnico Nacional, Mexico City, Mexico"
+repository-code: "https://github.com/YOUR_USER/dante-ir"
+keywords: [FTIR, ATR-FTIR, biospectroscopy, biofluids, batch effects, negative controls, interpretability]
