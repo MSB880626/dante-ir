@@ -1,5 +1,8 @@
 # DANTE-IR
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23740328.svg)](https://doi.org/10.5281/zenodo.23740328)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MSB880626/dante-ir/blob/main/notebooks/DANTE_IR_Colab.ipynb)
+
 **Diagnostic Audit aNd inTerpretable band dEscriptors for InfraRed spectra of biofluids**
 
 DANTE-IR answers two questions about an infrared (ATR-FTIR) dataset of two groups, for example patients and
@@ -15,14 +18,16 @@ controls:
 
 ## Use it without programming (Google Colab)
 
-Open `notebooks/DANTE_IR_Colab.ipynb` in Google Colab, run the four cells in order and fill in the form:
+Open the notebook directly in Google Colab: https://colab.research.google.com/github/MSB880626/dante-ir/blob/main/notebooks/DANTE_IR_Colab.ipynb
+
+Then run the four cells in order and fill in the form:
 spectra file, class column, positive class, person column (if there are replicate spectra), batch/site column
 (optional), sample type and ATR crystal. A ZIP with the report, figures and tables is downloaded at the end.
 
 ## Use it from Python or the command line
 
 ```bash
-pip install git+https://github.com/YOUR_USER/dante-ir
+pip install git+https://github.com/MSB880626/dante-ir
 dante-ir --spectra examples/example_spectra.csv --label group --positive disease --subject subject --batch batch --mode audit
 ```
 
@@ -83,4 +88,4 @@ See `reproduce_paper/README.md`.
 
 ## License and citation
 
-MIT license. Please cite the software (see `CITATION.cff`) and the associated article.
+MIT license. Please cite the software (Zenodo, https://doi.org/10.5281/zenodo.23740328; see `CITATION.cff`) and the associated article.
